@@ -21,3 +21,20 @@ function monkey(){
     }
     document.getElementById('monkeyking').innerText = monkey[0]
 }
+
+function stat (){
+    var str = document.getElementById("str").value
+   strs=str.split('')
+   strs.sort()
+   var obj={}
+   for (var i=0;i<str.length;i++){
+        var chars = strs[i]
+        if (obj[chars]){
+            obj[chars]++
+        }else{
+            obj[chars] = 1
+        }
+
+    }
+    document.getElementById('result').innerText = JSON.stringify(obj)
+}
