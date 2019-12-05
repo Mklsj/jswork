@@ -1,7 +1,9 @@
 let endseconds = new Date();
 let d =  h = m =  s = 0;
+d;
+h;
 m=59-endseconds.getMinutes();
-s = 59 - endseconds.getSeconds();
+s=59-endseconds.getSeconds();
 let id=setInterval(sceckill,1000)
 function sceckill(){
     s--;
