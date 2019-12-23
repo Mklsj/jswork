@@ -109,7 +109,7 @@
         last:document.getElementById('page_last'),
         pageNum:document.getElementById('page_num'),
         onChange:function(){
-            comment.ajax('http://localhost:8080/ajax?page=' + this.page,function(){
+            comment.ajax('http://localhost:8080/ajax' + this.page,function(){
                 ProgressBar = new progressContainer(progressContainer);
                 ProgressBar.show();
             },function(obj){
